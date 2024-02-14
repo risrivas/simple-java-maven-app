@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                bat "winscp -i **/target/*.jar **/target/../"
+                bat "copy /y /v **/target/*.jar **/target/../"
             }
         }
     }
