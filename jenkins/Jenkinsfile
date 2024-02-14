@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                bat "copy target/my-app-1.0-SNAPSHOT.jar ./"
+                bat "copy target\\my-app-1.0-SNAPSHOT.jar ."
             }
         }
     }
