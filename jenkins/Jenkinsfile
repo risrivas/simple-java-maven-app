@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                bat "copy C:\ProgramData\Jenkins\.jenkins\workspace\maven-project-pipeline\target\my-app-1.0-SNAPSHOT.jar C:\ProgramData\Jenkins\.jenkins\workspace\maven-project-pipeline\my-app-1.0-SNAPSHOT.jar"
+                bat "copy C:\ProgramData\Jenkins\.jenkins\workspace\maven-project-pipeline\target\my-app-1.0-SNAPSHOT.jar C:\ProgramData\Jenkins\.jenkins\workspace\maven-project-pipeline\"
             }
         }
     }
